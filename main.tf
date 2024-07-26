@@ -114,6 +114,4 @@ module "lambda" {
   }
 
   tags = merge(var.tags, var.lambda_function_tags)
-
-  depends_on = [aws_cloudwatch_log_group.lambda]
 }
